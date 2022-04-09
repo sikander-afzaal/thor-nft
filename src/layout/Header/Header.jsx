@@ -23,15 +23,12 @@ const Header = () => {
         <div className="h_container">
           <img src={logo} alt="" className="logo-mobile" />
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Collection</a>
-            <a className="desktop-logo" href="#">
-              <img src={logo} alt="logo " />
-            </a>
-            <a href="#">Roadmap</a>
-            <a href="#">Team</a>
-            <a href="#">Faq</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#collection">Collection</a>
+            <a href="#road">Roadmap</a>
+            <a href="#team">Team</a>
+            <a href="#faq">Faq</a>
           </div>
           <FontAwesomeIcon
             onClick={openFunc}

@@ -5,7 +5,7 @@ import ch3 from "../../assets/characters/ch3.png";
 import ch4 from "../../assets/characters/ch4.png";
 function Character() {
   return (
-    <div className="character">
+    <div id="character" className="character">
       <h1>Gods of Asgard</h1>
       <div className="wrapper-grid">
         <div className="wrapper-character">

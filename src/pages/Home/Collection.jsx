@@ -1,114 +1,141 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Autoplay, Lazy } from "swiper";
-import "swiper/swiper-bundle.css";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import art1 from "../../assets/images/art1.png";
 import art2 from "../../assets/images/art2.png";
 import art3 from "../../assets/images/art3.png";
 import art4 from "../../assets/images/art4.png";
 import art5 from "../../assets/images/art5.png";
 
-SwiperCore.use([Autoplay, Navigation, Lazy]);
-
 const Collection = () => {
   return (
     <>
-      <div className="collection_wrap">
+      <div id="collection" className="collection_wrap">
         <h1>GAMEPLAY</h1>
         <div className="collection">
-        <Swiper
-          direction="vertical"
-          slidesPerView="auto"
-          spaceBetween={20}
-          centeredSlides={true}
-          loop={true}
-          speed={4000}
-          autoplay={{
-            delay: 100,
-            disableOnInteraction: false,
-            reverseDirection: true,
-          }}
-          loopedSlides={3}
-        >
-          <SwiperSlide className="swiper-lazy">
-            <img src={art1} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art2} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art3} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art4} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art5} alt="..." />
-          </SwiperSlide>
-        </Swiper>
+          <Splide
+            options={{
+              speed: "3000",
+              perMove: 1,
+              interval: 2000,
+              autoplay: true,
+              gap: "20px",
+              loop: true,
+              perPage: 3,
+              height: "auto",
+              width: "100%",
+              arrows: false,
+              focus: "center",
+              pagination: false,
+              drag: true,
+              direction: "ttb",
+              type: "loop",
+              breakpoints: {
+                800: {
+                  direction: "ltr",
+                },
+              },
+            }}
+          >
+            <SplideSlide>
+              <img src={art1} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art2} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art3} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art4} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art5} alt="..." />
+            </SplideSlide>
+          </Splide>
 
-        <Swiper
-          direction="vertical"
-          slidesPerView="auto"
-          spaceBetween={20}
-          centeredSlides={true}
-          loop={true}
-          speed={4000}
-          autoplay={{
-            delay: 100,
-            disableOnInteraction: false,
-          }}
-          loopedSlides={4}
-        >
-          <SwiperSlide className="swiper-lazy">
-            <img src={art1} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art2} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art3} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art4} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art5} alt="..." />
-          </SwiperSlide>
-        </Swiper>
-        <Swiper
-          direction="vertical"
-          slidesPerView="auto"
-          spaceBetween={20}
-          centeredSlides={true}
-          loop={true}
-          speed={4000}
-          autoplay={{
-            delay: 100,
-            disableOnInteraction: false,
-            reverseDirection: true,
-          }}
-          loopedSlides={3}
-        >
-          <SwiperSlide className="swiper-lazy">
-            <img src={art1} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art2} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art3} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art4} alt="..." />
-          </SwiperSlide>
-          <SwiperSlide className="swiper-lazy">
-            <img src={art5} alt="..." />
-          </SwiperSlide>
-        </Swiper>
+          <Splide
+            options={{
+              speed: "3000",
+              perMove: 1,
+              interval: 2000,
+              autoplay: true,
+              gap: "20px",
+              loop: true,
+              perPage: 3,
+              height: "auto",
+              width: "100%",
+              arrows: false,
+              focus: "center",
+              pagination: false,
+              drag: true,
+              direction: "ttb",
+              type: "loop",
+              breakpoints: {
+                800: {
+                  direction: "rtl",
+                },
+              },
+            }}
+          >
+            <SplideSlide>
+              <img src={art1} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art2} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art3} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art4} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art5} alt="..." />
+            </SplideSlide>
+          </Splide>
+          <Splide
+            options={{
+              speed: "3000",
+              perMove: 1,
+              interval: 2000,
+              autoplay: true,
+              gap: "20px",
+              loop: true,
+              perPage: 3,
+              height: "auto",
+              width: "100%",
+              arrows: false,
+              focus: "center",
+              pagination: false,
+              drag: true,
+              direction: "ttb",
+              type: "loop",
+              breakpoints: {
+                800: {
+                  direction: "ltr",
+                },
+              },
+            }}
+          >
+            <SplideSlide>
+              <img src={art1} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art2} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art3} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art4} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art5} alt="..." />
+            </SplideSlide>
+          </Splide>
+        </div>
       </div>
-      </div>
-     
     </>
   );
 };
