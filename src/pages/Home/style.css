@@ -380,7 +380,9 @@
     row-gap: 50px;
   }
   .character h1,
-  .collection_wrap h1 {
+  .collection_wrap h1,
+  .team h1,
+  .heading-div .small {
     font-size: 2.4rem;
   }
 }
