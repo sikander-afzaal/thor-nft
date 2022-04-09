@@ -79,19 +79,19 @@ const Collection = () => {
             }}
           >
             <SplideSlide>
-              <img src={art1} alt="..." />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={art2} alt="..." />
-            </SplideSlide>
-            <SplideSlide>
-              <img src={art3} alt="..." />
+              <img src={art5} alt="..." />
             </SplideSlide>
             <SplideSlide>
               <img src={art4} alt="..." />
             </SplideSlide>
             <SplideSlide>
-              <img src={art5} alt="..." />
+              <img src={art3} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art2} alt="..." />
+            </SplideSlide>
+            <SplideSlide>
+              <img src={art1} alt="..." />
             </SplideSlide>
           </Splide>
           <Splide

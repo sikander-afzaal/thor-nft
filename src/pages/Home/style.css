@@ -479,7 +479,11 @@
   text-align: center;
   width: 70%;
 }
-
+.line {
+  height: 100%;
+  width: 2px;
+  background: black;
+}
 .roadmap .heading {
   margin-bottom: 1rem;
 }
@@ -527,7 +531,13 @@
   /* background-color: red; */
   position: relative;
 }
-
+.right-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
 .roadmap-box-content {
   position: absolute;
   top: 50%;
@@ -538,17 +548,15 @@
 
   transform: translateY(-50%);
   width: 620px;
-  /* height: 198px; */
+  height: 250px;
   padding: 36px;
 
   border-radius: 30px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   align-items: center;
-  gap: 15px;
-  flex-direction: column;
 }
 .roadmap-box-content ul {
   display: flex;
@@ -702,22 +710,41 @@
     /* border: 2px solid blue; */
     padding-left: 5rem;
   }
-
+  .roadmap-box-content ul li {
+    color: black;
+    z-index: 9;
+    width: 98%;
+    font-size: 1.2rem;
+  }
   .roadmap-box-content {
     position: static;
 
-    width: 100%;
+    width: 400px;
     padding: 30px;
 
     -webkit-transform: none;
-
+    justify-content: space-between;
     -ms-transform: none;
 
     transform: none;
     z-index: 100000 !important;
     background: white;
+    /* position: relative; */
   }
-
+  .line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90%;
+  }
+  .roadmap-box-content h1 {
+    flex: 0.3;
+  }
+  .roadmap-box-content .right-box {
+    flex: 0.7;
+    align-items: center;
+    justify-content: center;
+  }
   .roadmap-box-content::before {
     display: none;
   }
@@ -792,6 +819,32 @@
     max-height: 60px;
   }
 }
+@media screen and (max-width: 476px) {
+  .roadmap-box-content {
+    width: 95%;
+  }
+  .roadmap-content-wrapper {
+    width: 100%;
+  }
+  .line {
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    height: 90%;
+  }
+  .roadmap-box-content h1 {
+    flex: 0.2;
+  }
+  .roadmap-box-content .right-box {
+    flex: 0.8;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .right-box p {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 450px) {
   .roadmap .heading-div .small {
     font-size: 5rem;
@@ -812,6 +865,21 @@
     margin-top: 34px;
   }
 }
+@media screen and (max-width: 418px) {
+  .right-box {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .line {
+    left: 45%;
+  }
+  .right-box ul li {
+    font-size: 1rem;
+  }
+  .right-box p {
+    font-size: 1rem;
+  }
+}
 /* team ------------------------------- */
 .team {
   display: flex;
@@ -828,21 +896,16 @@
   color: white;
   font-size: 3rem;
 }
-.team-grid {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  align-items: center;
-  max-width: 1700px;
-  padding: 0rem 2rem;
-  flex-wrap: wrap;
-}
+
 .team-wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background-color: #b1bbd4;
+  padding: 20px 0px;
+  border-radius: 30px;
 }
 .team-wrapper img {
   max-width: 100%;
@@ -854,11 +917,11 @@
   pointer-events: none;
 }
 .team-wrapper h2 {
-  color: white;
+  color: black;
   font-size: 1.8rem;
 }
 .team-wrapper p {
-  color: #b1bbd4;
+  color: white;
   margin-top: 10px;
   font-size: 1.2rem;
   line-height: 1.5;

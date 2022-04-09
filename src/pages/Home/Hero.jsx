@@ -16,7 +16,18 @@ const Hero = () => {
         <div className="hero_container">
           <CountDown />
           <div className="video_content">
-            <video controls={false} autoPlay loop muted playsInline>
+            <video
+              onMouseEnter={(e) => {
+                e.target.setAttribute("controls", "controls");
+              }}
+              onMouseLeave={(e) => {
+                e.target.removeAttribute("controls", "controls");
+              }}
+              controls={false}
+              autoPlay
+              loop
+              playsInline
+            >
               <source src={gods_of_asgard} type="video/mp4" />
             </video>
           </div>

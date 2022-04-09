@@ -33,11 +33,9 @@ function Team() {
             },
             948: {
               perPage: 2,
-              width: "100%",
             },
             630: {
               perPage: 1,
-              width: "100%",
             },
           },
         }}

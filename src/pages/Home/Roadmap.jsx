@@ -62,14 +62,17 @@ function Roadmap() {
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
                     Q1
                   </h1>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    Announcements
-                  </p>
-                  <ul>
-                    <li>Gameplay</li>
-                    <li>Mint</li>
-                    <li>Tokenomics</li>
-                  </ul>
+                  <div className="line"></div>
+                  <div className="right-box">
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      Announcements
+                    </p>
+                    <ul>
+                      <li>Gameplay</li>
+                      <li>Mint</li>
+                      <li>Tokenomics</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div className="roadmap-box" ref={box2}>
@@ -77,16 +80,21 @@ function Roadmap() {
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
                     Q2
                   </h1>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    White paper
-                  </p>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    Private beta
-                  </p>
-                  <p className="fs-18px dark-blue lh-26px weight-5">NFT mint</p>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    Game release
-                  </p>
+                  <div className="line"></div>
+                  <div className="right-box">
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      White paper
+                    </p>
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      Private beta
+                    </p>
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      NFT mint
+                    </p>
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      Game release
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="roadmap-box" ref={box3}>
@@ -94,12 +102,15 @@ function Roadmap() {
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
                     Q3
                   </h1>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    PvP update
-                  </p>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    Balance changes
-                  </p>
+                  <div className="line"></div>
+                  <div className="right-box">
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      PvP update
+                    </p>
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      Balance changes
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="roadmap-box" ref={box4}>
@@ -107,12 +118,15 @@ function Roadmap() {
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
                     Q4
                   </h1>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    VR update
-                  </p>
-                  <p className="fs-18px dark-blue lh-26px weight-5">
-                    and more...
-                  </p>
+                  <div className="line"> </div>
+                  <div className="right-box">
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      VR update
+                    </p>
+                    <p className="fs-18px dark-blue lh-26px weight-5">
+                      and more...
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
