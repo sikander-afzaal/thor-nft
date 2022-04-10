@@ -15,6 +15,7 @@ const Hero = () => {
         <div className="overlay"></div>
         <div className="hero_container">
           <CountDown />
+          <button className="mint">MINT</button>
           <div className="video_content">
             <video
               onMouseEnter={(e) => {
