@@ -903,7 +903,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: #b1bbd4;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px 0px;
   border-radius: 30px;
 }
