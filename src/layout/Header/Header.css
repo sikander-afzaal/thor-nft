@@ -39,7 +39,7 @@
     overflow: hidden;
   }
   .h_container {
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .hamburger {
     display: block;

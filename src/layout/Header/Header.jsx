@@ -21,7 +21,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="h_container">
-          <img src={logo} alt="" className="logo-mobile" />
+          {/* <img src={logo} alt="" className="logo-mobile" /> */}
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
             <a onClick={openFunc} href="#home">
               Home
