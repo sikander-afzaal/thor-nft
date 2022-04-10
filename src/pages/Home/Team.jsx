@@ -13,7 +13,7 @@ function Team() {
       <h1>Core Team</h1>
       <Splide
         options={{
-          interval: 3000,
+          interval: 4000,
           autoplay: true,
           gap: "20px",
           rewind: true,
@@ -27,6 +27,8 @@ function Team() {
           drag: true,
           type: "loop",
           perMove: 1,
+          flickMaxPages: 1,
+          flickPower: 500,
           breakpoints: {
             1192: {
               width: "90%",
