@@ -58,7 +58,7 @@ const Collection = () => {
             options={{
               speed: "3000",
               perMove: 1,
-              interval: 2000,
+              interval: 3500,
               autoplay: true,
               gap: "20px",
               loop: true,
@@ -98,7 +98,7 @@ const Collection = () => {
             options={{
               speed: "3000",
               perMove: 1,
-              interval: 2000,
+              interval: 4000,
               autoplay: true,
               gap: "20px",
               loop: true,
