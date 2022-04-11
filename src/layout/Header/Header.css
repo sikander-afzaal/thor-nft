@@ -101,12 +101,12 @@
     align-items: center;
     width: 380px;
     z-index: 35;
-    justify-content: flex-start;
+    justify-content: center;
     opacity: 0;
     gap: 40px;
     text-align: center;
     transition: all 0.5s ease-in-out;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     /* background-image: linear-gradient(to bottom, #236bb8, #2669b1de); */
     background-color: #000000b4;
   }
