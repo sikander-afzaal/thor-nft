@@ -2,9 +2,10 @@
   width: 100%;
   background-color: #00000017;
   color: white;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   position: absolute;
   z-index: 9999;
+  height: 75px;
 }
 
 .h_container {
@@ -12,21 +13,56 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .nav_ul {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
 }
 
 .nav_ul a {
-  margin: 0 15px;
-  color: #fbea25;
-  font-size: 1.2rem;
+  /* margin: 0 15px; */
+  color: white;
+  font-size: 1.1rem;
   font-weight: 600;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
+.nav_ul a::before {
+  border-right: 1px solid grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: skew(-20deg);
+}
+.nav_ul a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #2b67a8, transparent);
+  transform: skew(-20deg);
+  opacity: 0;
+}
+.nav_ul a:hover::after {
+  opacity: 1;
+}
 .logo-mobile {
   display: none;
 }
@@ -34,12 +70,13 @@
 .hamburger {
   display: none;
 }
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 989px) {
   .header {
     overflow: hidden;
   }
   .h_container {
     justify-content: flex-end;
+    align-items: center;
   }
   .hamburger {
     display: block;
@@ -61,12 +98,19 @@
     background-color: black;
     flex-direction: column;
     align-items: flex-start;
-    width: 380px;
+    width: 375px;
     z-index: 35;
     justify-content: center;
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
+  .nav_ul a::before {
+    display: none;
+  }
+  .nav_ul a::after {
+    display: none;
+  }
+
   .nav_ul a {
     margin: 20px 50px;
     font-size: 1.4rem;
