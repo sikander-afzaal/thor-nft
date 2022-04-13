@@ -274,7 +274,7 @@
   width: 337px;
   /* height: 500px; */
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 940px) {
   .t_container {
     flex-direction: column;
     justify-content: center;
@@ -295,6 +295,11 @@
   .t_left h2:after {
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 560px) {
+  .t_container {
+    max-width: none;
   }
 }
 /* siege---------- */
@@ -465,6 +470,11 @@
     width: 70%;
   }
 }
+@media screen and (max-width: 872px) {
+  .character p {
+    width: 95%;
+  }
+}
 @media screen and (max-width: 624px) {
   .wrapper-grid {
     display: grid;
@@ -473,9 +483,12 @@
     row-gap: 50px;
   }
   .character p {
-    width: 85%;
+    width: 95%;
+    font-size: 1.1rem;
   }
-  .character h1,
+  .character h1 {
+    font-size: 2rem;
+  }
   .collection_wrap h1,
   .team h1,
   .heading-div .small {
