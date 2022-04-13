@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="hero_container">
           <CountDown />
           <button className="mint">MINT</button>
-          <div className="video_content">
+          {/* <div className="video_content">
             <video
               onMouseEnter={(e) => {
                 e.target.setAttribute("controls", "controls");
@@ -31,9 +31,9 @@ const Hero = () => {
             >
               <source src={gods_of_asgard} type="video/mp4" />
             </video>
-          </div>
+          </div> */}
         </div>
-        <div className="board">
+        {/* <div className="board">
           <img src={board} alt="..." />
           <div>
             <a href="#">
@@ -46,7 +46,7 @@ const Hero = () => {
               <img src={circles} alt="..." />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

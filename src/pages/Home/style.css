@@ -6,9 +6,9 @@
   position: relative;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  /* gap: 6rem; */
   flex-direction: column;
   padding-top: 5rem;
 }
