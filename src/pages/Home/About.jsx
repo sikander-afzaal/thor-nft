@@ -4,7 +4,7 @@ import React from "react";
 // import Fade from "react-reveal/Fade";
 // Assets
 // import traitImg from "../../assets/traits.jpg";
-import artImg from "../../assets/images/abt_art.png";
+import vid from "../../assets/video/about-vid.mp4";
 
 const About = () => {
   return (
@@ -21,21 +21,36 @@ const About = () => {
             <div>
               {/* <RubberBand duration={1200} delay={1000}> */}
               <h2>
-                Welcome <br /> Asgardians!{" "}
+                Welcome <br /> Asgardians!
               </h2>
               {/* </RubberBand> */}
               {/* <img loading="lazy" className="down" src={down} alt="down" /> */}
             </div>
             {/* <Fade duration={1200} delay={1000}> */}
             <p>
-              Ready your weapons, the battle for the 9 realms will begin on May
-              1st, 2022. Gods of Asgard is a P2E NFT Battle-Royale game built on
-              the Avalanche blockchain.
+              Gods of Asgard is a P2E NFT Battle-Royale game rooted in Norse
+              myhtology and powered by the Avalanche blockchain. Mysterious
+              enemy forces are conspiring against the realms and disrupting the
+              balance created by the Gods. Ready your weapons, the epic battle
+              for the nine realms begins soon.
             </p>
             {/* </Fade> */}
           </div>
           <div className="t_right">
-            <img loading="lazy" src={artImg} alt="..." />
+            <video
+              onMouseEnter={(e) => {
+                e.target.setAttribute("controls", "controls");
+              }}
+              onMouseLeave={(e) => {
+                e.target.removeAttribute("controls", "controls");
+              }}
+              controls={false}
+              autoPlay
+              loop
+              playsInline
+            >
+              <source src={vid} type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

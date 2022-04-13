@@ -1,28 +1,57 @@
 import React from "react";
-import ch1 from "../../assets/characters/ch1.png";
-import ch2 from "../../assets/characters/ch2.png";
-import ch3 from "../../assets/characters/ch3.png";
-import ch4 from "../../assets/characters/ch4.png";
+import thor from "../../assets/characters/thor.jpeg";
+import heimdall from "../../assets/characters/heimdall.jpeg";
+import odin from "../../assets/characters/odin.jpeg";
+import freya from "../../assets/characters/freya.jpeg";
 function Character() {
   return (
     <div id="character" className="character">
-      <h1>Gods of Asgard</h1>
+      <h1>The Gods of Asgard</h1>
+      <p>
+        The God of Asgard are NFTs from our upcoming collection minting May 1st.
+        Each God is equipped with their own unique skills and story. The NFTs
+        act as your playable character and key to entering in this universe
+      </p>
       <div className="wrapper-grid">
-        <div className="wrapper-character">
-          <img src={ch1} alt="" />
-          <h2>Heimdall</h2>
+        <div className="wrapper-character heimdall">
+          <img src={heimdall} alt="" />
+          <p className="pop-text">
+            The watchman of the gods and guardian of the Bifrost; Heimdall,
+            defends the rainbow bridge that connects all nine realms together.
+            He is gifted with the power of prescience; a divine capacity of
+            foresight, allowing him to see and hear across all realms, both
+            mortal and god alike. He wields, Hofund, a sword with the ability to
+            draw energy from other magical entities that exist within the
+            universe.
+          </p>
         </div>
         <div className="wrapper-character">
-          <img src={ch4} alt="" />
-          <h2>Freya</h2>
+          <img src={freya} alt="" />{" "}
+          <p className="pop-text">
+            Queen of the Valkyries and goddess of love and war, Freya, is
+            equipped with her sword, shield, and magical bow. Blessed by magical
+            forces, she leads her fearless Valkyries into battle; the entheat &
+            powerful league of goddesses, who form her royal guard
+          </p>
         </div>
         <div className="wrapper-character">
-          <img src={ch3} alt="" />
-          <h2>Thor</h2>
+          <img src={thor} alt="" />{" "}
+          <p className="pop-text">
+            Son of, Odin, and the god of thunder, Thor, wields his mystical
+            hammer, Mjolnir. He is equipped with his belt, Megingjord, bestowing
+            him with increased strength and governance over the powerful element
+            of lightning.
+          </p>
         </div>
         <div className="wrapper-character">
-          <img src={ch2} alt="" />
-          <h2>Odin</h2>
+          <img src={odin} alt="" />{" "}
+          <p className="pop-text">
+            The great & powerful all father and king of Asgard. Odin is the
+            strongest, fiercest, and most wise of all the Gods in all the nine
+            realms. Equipped with his magical spear, Gungnir, he is ever ready
+            to bring order to the universe; fighting side by side with his
+            comrades to restore peace and prosperity to its lands.
+          </p>
         </div>
       </div>
     </div>

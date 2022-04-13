@@ -50,7 +50,7 @@ function Faq() {
             )}
           </div>
           <div className={`faq-answer ${open[0] ? "active" : ""}`}>
-            <p className="answer">May 1st, 2022</p>
+            <p className="answer">May 31st, 2022 </p>
           </div>
         </div>
         <div className="faq-q-div">
@@ -73,8 +73,8 @@ function Faq() {
           </div>
           <div className={`faq-answer ${open[1] ? "active" : ""}`}>
             <p className="answer">
-              Asgardians will be stored on the Avalanche network and minted
-              through a custom smart contract
+              Avalanche blockchain. All of our custom smart contracts will be
+              audited by CertiK
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ function Faq() {
             onClick={clickHandler}
             className={`faq-btn ${open[2] ? "border-radius" : ""}`}
           >
-            <p className={`${open[2] ? "active-btn" : ""}`}>How can I play??</p>
+            <p className={`${open[2] ? "active-btn" : ""}`}>How can i play?</p>
             {open[2] ? (
               <FontAwesomeIcon
                 className={`${open[2] ? "active-btn" : ""}`}
@@ -96,9 +96,10 @@ function Faq() {
           </div>
           <div className={`faq-answer ${open[2] ? "active" : ""}`}>
             <p className="answer">
-              You will need Gods of Asgard NFT to play. To obtain an NFT you can
-              mint the NFT, purchase on the secondary marketplace NFTrade, or
-              receive through scholarship system
+              To play Gods of Asgard, you need at least one of the four God
+              NFT's from our collection. To obtain an NFT you can mint the NFT
+              through our dApp, purchase on the secondary marketplace NFTrade,
+              or rent an NFT through our renting marketplace.
             </p>
           </div>
         </div>

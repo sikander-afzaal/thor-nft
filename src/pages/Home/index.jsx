@@ -8,14 +8,16 @@ import Character from "./Character";
 import Roadmap from "./Roadmap";
 import Faq from "./Faq";
 import Team from "./Team";
+import Built from "./Built";
 const Home = () => {
   return (
     <>
       <Hero />
       <About />
       <Siege />
-      <Collection />
       <Character />
+      <Built />
+      <Collection />
       <Roadmap />
       <Team />
       <Faq />

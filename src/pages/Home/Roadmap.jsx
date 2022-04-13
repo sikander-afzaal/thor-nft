@@ -60,39 +60,38 @@ function Roadmap() {
               <div className="roadmap-box" ref={box}>
                 <div className="roadmap-box-content left">
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Q1
+                    Phase 1
                   </h1>
                   <div className="line"></div>
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      Announcements
+                    <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
+                      Development and Launch
                     </p>
-                    <ul>
-                      <li>Gameplay</li>
-                      <li>Mint</li>
-                      <li>Tokenomics</li>
-                    </ul>
+                    <p>Full model upgrades</p>
+                    <p>NFT Mint</p>
+                    <p>Playable Demo</p>
+                    <p>Whitepaper</p>
+                    <p>Native Token Launch</p>
+                    <p>Renting Marketplace</p>
+                    <p>Game Launch</p>
                   </div>
                 </div>
               </div>
               <div className="roadmap-box" ref={box2}>
                 <div className="roadmap-box-content right">
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Q2
+                    Phase 2
                   </h1>
                   <div className="line"></div>
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      White paper
+                    <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
+                      PvP Update
                     </p>
                     <p className="fs-18px dark-blue lh-26px weight-5">
-                      Private beta
+                      Balance changes
                     </p>
                     <p className="fs-18px dark-blue lh-26px weight-5">
-                      NFT mint
-                    </p>
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      Game release
+                      Further game improvements
                     </p>
                   </div>
                 </div>
@@ -100,26 +99,13 @@ function Roadmap() {
               <div className="roadmap-box" ref={box3}>
                 <div className="roadmap-box-content left">
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Q3
+                    Phase 3
                   </h1>
                   <div className="line"></div>
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      PvP update
+                    <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
+                      Future
                     </p>
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      Balance changes
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="roadmap-box" ref={box4}>
-                <div className="roadmap-box-content right">
-                  <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Q4
-                  </h1>
-                  <div className="line"> </div>
-                  <div className="right-box">
                     <p className="fs-18px dark-blue lh-26px weight-5">
                       VR update
                     </p>
