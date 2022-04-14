@@ -8,8 +8,6 @@ function Roadmap() {
   let box = React.useRef();
   let box2 = React.useRef();
   let box3 = React.useRef();
-  let box4 = React.useRef();
-  let box5 = React.useRef();
 
   React.useEffect(() => {
     const handler = () => {
@@ -17,7 +15,6 @@ function Roadmap() {
       const boxTop = box.current.getBoundingClientRect().top;
       const box2Top = box2.current.getBoundingClientRect().top;
       const box3Top = box3.current.getBoundingClientRect().top;
-      const box4Top = box4.current.getBoundingClientRect().top;
       if (bottleTop > boxTop) {
         // milkRef.current.style.height = "20px";
       } else {
@@ -31,10 +28,6 @@ function Roadmap() {
 
       if (bottleTop > box3Top) {
         // milkRef.current.style.height = "80px";
-      }
-
-      if (bottleTop > box4Top) {
-        // milkRef.current.style.height = "90px";
       }
     };
     document.addEventListener("scroll", handler);
