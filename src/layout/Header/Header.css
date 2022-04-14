@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 .header {
   width: 100%;
   background-color: #00000017;
@@ -40,6 +41,8 @@
   align-items: center;
   position: relative;
   transition: all 0.3s ease-in-out;
+  font-family: "Vidaloka", serif !important;
+  font-weight: 400;
 }
 .nav_ul a::before {
   border-right: 1px solid grey;
