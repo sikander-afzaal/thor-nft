@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 // assets
 import logo from "../../assets/images/logo.png";
@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [navbar, setNavbar] = useState(false);
   const openFunc = () => {
     setOpen((prev) => !prev);
     const header = document.querySelector(".header");
@@ -17,9 +18,20 @@ const Header = () => {
       }, 300);
     }
   };
+  const changeBackground = () => {
+    if (window.scrollY >= 66) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
     <>
-      <header className="header">
+      <header className={`header ${navbar ? "black-nav" : ""}`}>
         <div className="h_container">
           {/* <img src={logo} alt="" className="logo-mobile" /> */}
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>

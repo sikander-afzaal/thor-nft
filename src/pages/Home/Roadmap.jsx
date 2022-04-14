@@ -59,10 +59,8 @@ function Roadmap() {
 
               <div className="roadmap-box" ref={box}>
                 <div className="roadmap-box-content left">
-                  <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Phase 1
-                  </h1>
-                  <div className="line"></div>
+                  <h1 className="pink margin-bot">Phase 1</h1>
+
                   <div className="right-box">
                     <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
                       Development and Launch
@@ -82,7 +80,7 @@ function Roadmap() {
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
                     Phase 2
                   </h1>
-                  <div className="line"></div>
+
                   <div className="right-box">
                     <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
                       PvP Update
@@ -101,7 +99,7 @@ function Roadmap() {
                   <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
                     Phase 3
                   </h1>
-                  <div className="line"></div>
+
                   <div className="right-box">
                     <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
                       Future

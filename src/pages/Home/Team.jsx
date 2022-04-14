@@ -20,8 +20,8 @@ function Team() {
           loop: true,
           perPage: 3,
           height: "auto",
-          width: "80%",
-          arrows: false,
+          width: "100%",
+          arrows: true,
           focus: "center",
           pagination: false,
           drag: true,
@@ -31,11 +31,10 @@ function Team() {
           flickPower: 500,
           breakpoints: {
             1192: {
-              width: "90%",
-            },
-            948: {
+              width: "100%",
               perPage: 2,
             },
+
             630: {
               perPage: 1,
             },
@@ -46,45 +45,35 @@ function Team() {
           <div className="team-wrapper">
             <img src={team3} alt="" />
             <h2>David Dotan</h2>
-            <p>
-              Founder <br /> <span className="hidden">hidden</span>
-            </p>
+            <p>Founder</p>
           </div>
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
           <div className="team-wrapper">
             <img src={team4} alt="" />
             <h2>TiSci</h2>
-            <p>
-              Founder and <br /> Lead Developer
-            </p>
+            <p>Founder and Lead Developer</p>
           </div>
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
           <div className="team-wrapper">
             <img src={team5} alt="" />
             <h2>aaronft</h2>
-            <p>
-              Project and <br /> Community Manager
-            </p>
+            <p>Project and Community Manager</p>
           </div>
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
           <div className="team-wrapper">
             <img src={team1} alt="" />
             <h2>Db009</h2>
-            <p>
-              Unity <br /> Developer
-            </p>
+            <p>Unity Developer</p>
           </div>
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
           <div className="team-wrapper">
             <img src={team2} alt="" />
             <h2>0xTom</h2>
-            <p>
-              Solidity <br /> Developer
-            </p>
+            <p>Solidity Developer</p>
           </div>
         </SplideSlide>
       </Splide>

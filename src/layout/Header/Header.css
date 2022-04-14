@@ -3,11 +3,15 @@
   background-color: #00000017;
   color: white;
   /* padding: 20px 0; */
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   height: 75px;
+  transition: all 0.5s ease-in-out;
+  top: 0;
 }
-
+.black-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .h_container {
   width: 90%;
   margin: 0 auto;
@@ -26,7 +30,7 @@
 
 .nav_ul a {
   /* margin: 0 15px; */
-  color: rgb(186, 186, 255);
+  color: #06fff0;
   font-size: 1.1rem;
   font-weight: 600;
   height: 100%;
@@ -57,7 +61,7 @@
   transition: all 0.3s ease-in-out;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to top, #2b67a8, transparent);
+  background-image: linear-gradient(to top, #06fff0, transparent);
   transform: skew(-20deg);
   opacity: 0;
 }

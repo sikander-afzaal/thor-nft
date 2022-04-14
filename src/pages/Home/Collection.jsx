@@ -11,7 +11,7 @@ const Collection = () => {
   return (
     <>
       <div id="collection" className="collection_wrap">
-        <h1>GAMEPLAY</h1>
+        <h1>Gameplay</h1>
         <div className="collection">
           <Splide
             options={{

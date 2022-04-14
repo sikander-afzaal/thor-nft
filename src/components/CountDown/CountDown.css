@@ -6,8 +6,8 @@
   background-color: #00000061;
   color: white;
   padding: 15px;
-    border-radius: 6px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 16%);
 }
 
 .countdown div {
@@ -20,7 +20,7 @@
 .countdown span {
   font-size: 2rem;
   font-weight: 800;
-  color: #0897dee3;
+  color: #06fff0;
   text-shadow: 2px 1px 0 rgb(0 0 0 / 26%);
   -webkit-text-stroke: 0.5px transparent;
   animation: mover 1s infinite alternate;
@@ -29,7 +29,7 @@
 .countdown h2 {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #b1bbd4;
+  color: white;
 }
 
 .countdown strong {

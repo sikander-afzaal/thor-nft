@@ -6,7 +6,16 @@ import freya from "../../assets/characters/freya.jpeg";
 function Character() {
   return (
     <div id="character" className="character">
-      <h1>The Gods of Asgard</h1>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <div>
+        {/* <RubberBand duration={1200} delay={1000}> */}
+        <h1>The Gods of Asgard</h1>
+        {/* </RubberBand> */}
+        {/* <img loading="lazy" className="down" src={down} alt="down" /> */}
+      </div>
       <p>
         The God of Asgard are NFTs from our upcoming collection minting May 1st.
         Each God is equipped with their own unique skills and story. The NFTs

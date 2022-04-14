@@ -3,6 +3,10 @@ import React from "react";
 function Built() {
   return (
     <div className="built">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       <h1>Built on the Blockchain</h1>
       <p>
         Combining gaming with blockchain technology, it's now possible to
