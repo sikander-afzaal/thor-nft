@@ -71,6 +71,12 @@
 .nav_ul a:hover::after {
   opacity: 1;
 }
+.active-nav::after {
+  opacity: 1 !important;
+}
+.active-nav {
+  color: white !important;
+}
 .nav_ul a:hover {
   color: white;
 }
@@ -127,7 +133,12 @@
   .nav_ul a::after {
     display: none;
   }
-
+  .active-nav::after {
+    display: none;
+  }
+  .active-nav {
+    color: white;
+  }
   .nav_ul a {
     margin: 0px 50px;
     font-size: 1.4rem;

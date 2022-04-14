@@ -7,7 +7,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
-  const openFunc = () => {
+  const openFunc = (e) => {
     setOpen((prev) => !prev);
     const header = document.querySelector(".header");
     if (!open === true) {
@@ -17,6 +17,9 @@ const Header = () => {
         header.classList.remove("overflow");
       }, 300);
     }
+    const active = document.querySelector(".active-nav");
+    active.classList.remove("active-nav");
+    e.target.classList.add("active-nav");
   };
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -35,7 +38,7 @@ const Header = () => {
         <div className="h_container">
           {/* <img src={logo} alt="" className="logo-mobile" /> */}
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
-            <a onClick={openFunc} href="#home">
+            <a className="active-nav" onClick={openFunc} href="#home">
               Home
             </a>
             <a onClick={openFunc} href="#about">

@@ -10,7 +10,7 @@ import art5 from "../../assets/images/art5.png";
 const Collection = () => {
   return (
     <>
-      <div id="collection" className="collection_wrap">
+      <div className="collection_wrap">
         <h1>Gameplay</h1>
         <div className="collection">
           <Splide

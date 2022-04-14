@@ -32,6 +32,8 @@
   border-radius: 15px;
   transition: all 0.4s ease-in-out;
   background-color: #1d2331;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
 }
 .social-div-hero {
   display: flex;
@@ -148,11 +150,12 @@
 .built h1 {
   color: #ffffff;
   font-size: 3rem;
-  font-weight: 600;
   margin-bottom: 50px;
   z-index: 9;
   letter-spacing: 5px;
   font-weight: 800;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
   position: relative;
 }
 
@@ -409,9 +412,10 @@
 .collection_wrap h1 {
   font-size: 3rem;
   color: #ffffff;
-  font-weight: 900;
   letter-spacing: 2px;
   text-align: center;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
 }
 
 .collection .row:nth-child(1),
@@ -595,6 +599,8 @@
   grid-row: 1/2;
   justify-self: center;
   align-self: center;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
 }
 .built-box p {
   grid-column: 1/2;
@@ -655,7 +661,8 @@
 .roadmap h1 {
   font-size: 3rem;
   color: #ffffff;
-  font-weight: 900;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -764,6 +771,8 @@
 }
 .roadmap-box-content h1 {
   color: #06fff0;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 700;
 }
 .margin-bot {
   margin-bottom: 1.5rem;
@@ -1013,6 +1022,8 @@
   margin-top: 1.5rem;
   color: white;
   font-size: 3rem;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
 }
 .splide__track {
   overflow: visible !important;
@@ -1046,6 +1057,8 @@
 .team-wrapper h2 {
   color: #06fff0;
   font-size: 2rem;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
 }
 .team-wrapper p {
   color: white;
@@ -1126,6 +1139,8 @@
   flex-direction: column;
   text-align: left;
   line-height: 1.6;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
   width: min-content;
 }
 .faq-div {

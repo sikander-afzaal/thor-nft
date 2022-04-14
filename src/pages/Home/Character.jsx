@@ -5,7 +5,7 @@ import odin from "../../assets/characters/odin.jpeg";
 import freya from "../../assets/characters/freya.jpeg";
 function Character() {
   return (
-    <div id="character" className="character">
+    <div id="collection" className="character">
       <span></span>
       <span></span>
       <span></span>
