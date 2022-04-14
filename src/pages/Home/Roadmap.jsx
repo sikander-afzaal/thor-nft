@@ -62,7 +62,7 @@ function Roadmap() {
                   <h1 className="pink margin-bot">Phase 1</h1>
 
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
+                    <p className="fs-18px dark-blue lh-26px weight-5">
                       Development and Launch
                     </p>
                     <p>Full model upgrades</p>
@@ -82,7 +82,7 @@ function Roadmap() {
                   </h1>
 
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
+                    <p className="fs-18px dark-blue lh-26px weight-5">
                       PvP Update
                     </p>
                     <p className="fs-18px dark-blue lh-26px weight-5">
@@ -101,9 +101,7 @@ function Roadmap() {
                   </h1>
 
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5 bold-underline">
-                      Future
-                    </p>
+                    <p className="fs-18px dark-blue lh-26px weight-5">Future</p>
                     <p className="fs-18px dark-blue lh-26px weight-5">
                       VR update
                     </p>
