@@ -1152,7 +1152,6 @@
   height: auto;
   text-align: center;
   padding: 3rem 0rem;
-  gap: 2rem;
   margin-inline: auto;
   margin-top: 5rem;
 }
@@ -1188,7 +1187,7 @@
 .faq-div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 60%;
   gap: 20px;
   flex-direction: column;
@@ -1257,6 +1256,7 @@
 }
 @media screen and (max-width: 1390px) {
   .faq-div {
+    align-items: center;
     flex: 0.7;
   }
   .heading-div {
