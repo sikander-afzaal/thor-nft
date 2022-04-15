@@ -1,8 +1,7 @@
 import React from "react";
 import hammer from "../../assets/icons/hammer.svg";
 function Roadmap() {
-  // let milkRef = React.useRef();
-  let bottle = React.useRef();
+  let Thorhammer = React.useRef();
   let lineRef = React.useRef();
 
   let box = React.useRef();
@@ -10,26 +9,7 @@ function Roadmap() {
   let box3 = React.useRef();
 
   React.useEffect(() => {
-    const handler = () => {
-      const bottleTop = bottle.current.getBoundingClientRect().top;
-      const boxTop = box.current.getBoundingClientRect().top;
-      const box2Top = box2.current.getBoundingClientRect().top;
-      const box3Top = box3.current.getBoundingClientRect().top;
-      if (bottleTop > boxTop) {
-        // milkRef.current.style.height = "20px";
-      } else {
-        box.current.style.backgroundColor = "transparent";
-        // milkRef.current.style.height = "10px";
-      }
-
-      if (bottleTop > box2Top) {
-        // milkRef.current.style.height = "50px";
-      }
-
-      if (bottleTop > box3Top) {
-        // milkRef.current.style.height = "80px";
-      }
-    };
+    const handler = () => {};
     document.addEventListener("scroll", handler);
 
     return () => {
@@ -44,20 +24,18 @@ function Roadmap() {
           <h1>Roadmap</h1>
           <div className="roadmap-content-wrapper">
             <div className="roadmap-content" ref={lineRef}>
-              <div className="roadmap-box bot" ref={bottle}>
-                <div className="bottle">
+              <div className="roadmap-box bot" ref={Thorhammer}>
+                <div className="hammer">
                   <img src={hammer} alt="" />
                 </div>
               </div>
 
               <div className="roadmap-box" ref={box}>
                 <div className="roadmap-box-content left">
-                  <h1 className="pink margin-bot">Phase 1</h1>
+                  <h1 className="margin-bot">Phase 1</h1>
 
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      Development and Launch
-                    </p>
+                    <p>Development and Launch</p>
                     <p>Full model upgrades</p>
                     <p>NFT Mint</p>
                     <p>Playable Demo</p>
@@ -70,37 +48,23 @@ function Roadmap() {
               </div>
               <div className="roadmap-box" ref={box2}>
                 <div className="roadmap-box-content right">
-                  <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Phase 2
-                  </h1>
+                  <h1>Phase 2</h1>
 
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      PvP Update
-                    </p>
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      Balance changes
-                    </p>
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      Further game improvements
-                    </p>
+                    <p>PvP Update</p>
+                    <p>Balance changes</p>
+                    <p>Further game improvements</p>
                   </div>
                 </div>
               </div>
               <div className="roadmap-box" ref={box3}>
                 <div className="roadmap-box-content left">
-                  <h1 className="fs-48px teko pink weight-7 lh-42px mb-10px">
-                    Phase 3
-                  </h1>
+                  <h1>Phase 3</h1>
 
                   <div className="right-box">
-                    <p className="fs-18px dark-blue lh-26px weight-5">Future</p>
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      VR update
-                    </p>
-                    <p className="fs-18px dark-blue lh-26px weight-5">
-                      and more...
-                    </p>
+                    <p>Future</p>
+                    <p>VR update</p>
+                    <p>and more...</p>
                   </div>
                 </div>
               </div>

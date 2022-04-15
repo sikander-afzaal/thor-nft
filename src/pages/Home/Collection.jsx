@@ -5,7 +5,6 @@ import art1 from "../../assets/images/art1.png";
 import art2 from "../../assets/images/art2.png";
 import art3 from "../../assets/images/art3.png";
 import art4 from "../../assets/images/art4.png";
-import art5 from "../../assets/images/art5.png";
 
 const Collection = () => {
   return (

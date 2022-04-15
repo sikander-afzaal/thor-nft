@@ -6,7 +6,7 @@ import team4 from "../../assets/team/team (4).png";
 import team5 from "../../assets/team/team (5).png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-
+import TeamCard from "../../components/TeamCard/TeamCard";
 function Team() {
   return (
     <div id="team" className="team">
@@ -42,39 +42,27 @@ function Team() {
         }}
       >
         <SplideSlide className="swiper-lazy">
-          <div className="team-wrapper">
-            <img src={team3} alt="" />
-            <h2>David Dotan</h2>
-            <p>Founder</p>
-          </div>
+          <TeamCard img={team3} name={"David Dotan"} role={"Founder"} />
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
-          <div className="team-wrapper">
-            <img src={team4} alt="" />
-            <h2>TiSci</h2>
-            <p>Founder and Lead Developer</p>
-          </div>
+          <TeamCard
+            img={team4}
+            name={"TiSci"}
+            role={"Founder and Lead Developer"}
+          />
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
-          <div className="team-wrapper">
-            <img src={team5} alt="" />
-            <h2>aaronft</h2>
-            <p>Project and Community Manager</p>
-          </div>
+          <TeamCard
+            img={team5}
+            name={"aaronft"}
+            role={"Project and Community Manager"}
+          />
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
-          <div className="team-wrapper">
-            <img src={team1} alt="" />
-            <h2>Db009</h2>
-            <p>Unity Developer</p>
-          </div>
+          <TeamCard img={team1} name={"Db009"} role={"Unity Developer"} />
         </SplideSlide>
         <SplideSlide className="swiper-lazy">
-          <div className="team-wrapper">
-            <img src={team2} alt="" />
-            <h2>0xTom</h2>
-            <p>Solidity Developer</p>
-          </div>
+          <TeamCard img={team2} name={"0xTom"} role={"Solidity Developer"} />
         </SplideSlide>
       </Splide>
     </div>

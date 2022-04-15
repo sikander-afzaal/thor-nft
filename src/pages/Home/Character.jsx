@@ -3,6 +3,7 @@ import thor from "../../assets/characters/thor.jpeg";
 import heimdall from "../../assets/characters/heimdall.jpeg";
 import odin from "../../assets/characters/odin.jpeg";
 import freya from "../../assets/characters/freya.jpeg";
+import NftCard from "../../components/NftCard/NftCard";
 function Character() {
   return (
     <div id="collection" className="character">
@@ -11,10 +12,7 @@ function Character() {
       <span></span>
       <span></span>
       <div>
-        {/* <RubberBand duration={1200} delay={1000}> */}
         <h1>The Gods of Asgard</h1>
-        {/* </RubberBand> */}
-        {/* <img loading="lazy" className="down" src={down} alt="down" /> */}
       </div>
       <p>
         The God of Asgard are NFTs from our upcoming collection minting May 1st.
@@ -22,46 +20,41 @@ function Character() {
         act as your playable character and key to entering in this universe
       </p>
       <div className="wrapper-grid">
-        <div className="wrapper-character heimdall">
-          <img src={heimdall} alt="" />
-          <p className="pop-text">
-            The watchman of the gods and guardian of the Bifrost; Heimdall,
+        <NftCard
+          img={heimdall}
+          desc={`The watchman of the gods and guardian of the Bifrost; Heimdall,
             defends the rainbow bridge that connects all nine realms together.
             He is gifted with the power of prescience; a divine capacity of
             foresight, allowing him to see and hear across all realms, both
             mortal and god alike. He wields, Hofund, a sword with the ability to
             draw energy from other magical entities that exist within the
-            universe.
-          </p>
-        </div>
-        <div className="wrapper-character">
-          <img src={freya} alt="" />{" "}
-          <p className="pop-text">
-            Queen of the Valkyries and goddess of love and war, Freya, is
+            universe.`}
+        />
+
+        <NftCard
+          img={freya}
+          desc={`Queen of the Valkyries and goddess of love and war, Freya, is
             equipped with her sword, shield, and magical bow. Blessed by magical
             forces, she leads her fearless Valkyries into battle; the entheat &
-            powerful league of goddesses, who form her royal guard
-          </p>
-        </div>
-        <div className="wrapper-character">
-          <img src={thor} alt="" />{" "}
-          <p className="pop-text">
-            Son of, Odin, and the god of thunder, Thor, wields his mystical
+            powerful league of goddesses, who form her royal guard`}
+        />
+
+        <NftCard
+          img={thor}
+          desc={`Son of, Odin, and the god of thunder, Thor, wields his mystical
             hammer, Mjolnir. He is equipped with his belt, Megingjord, bestowing
             him with increased strength and governance over the powerful element
-            of lightning.
-          </p>
-        </div>
-        <div className="wrapper-character">
-          <img src={odin} alt="" />{" "}
-          <p className="pop-text">
-            The great & powerful all father and king of Asgard. Odin is the
+            of lightning.`}
+        />
+
+        <NftCard
+          img={odin}
+          desc={`The great & powerful all father and king of Asgard. Odin is the
             strongest, fiercest, and most wise of all the Gods in all the nine
             realms. Equipped with his magical spear, Gungnir, he is ever ready
             to bring order to the universe; fighting side by side with his
-            comrades to restore peace and prosperity to its lands.
-          </p>
-        </div>
+            comrades to restore peace and prosperity to its lands.`}
+        />
       </div>
     </div>
   );

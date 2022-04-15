@@ -1,0 +1,38 @@
+.team-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+  background: #0a1f3a78;
+  min-height: 315px;
+  padding: 70px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.team-wrapper img {
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+.team-wrapper h2 {
+  color: #06fff0;
+  font-size: 2rem;
+  font-family: "Vidaloka", serif !important;
+  font-weight: bold;
+}
+.team-wrapper p {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
