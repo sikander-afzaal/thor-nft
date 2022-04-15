@@ -4,7 +4,7 @@ import vid from "../../assets/video/about-vid.mp4";
 const About = () => {
   return (
     <>
-      <div className="traits" id="about">
+      <div className="about" id="about">
         <div className="shadow_div"></div>
         <div className="shadow_div sh_div2"></div>
         <div className="t_container">
