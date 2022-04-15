@@ -280,6 +280,13 @@
   }
 }
 /* siege---------- */
+.siege {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem 0rem;
+}
 .box {
   position: relative;
   width: 500px;
@@ -288,15 +295,20 @@
   overflow: hidden;
   color: white;
   padding: 20px;
-  margin: 5rem auto;
 }
-.box .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  height: 100%;
+.hammer-left,
+.hammer-right {
+  max-width: 400px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hammer-left {
+  left: 5%;
+}
+.hammer-right {
+  right: 5%;
 }
 
 .box span {
@@ -361,8 +373,33 @@
   line-height: 1.7;
   font-weight: 500;
   width: 100%;
+  margin-top: 21%;
 }
 
+@media screen and (max-width: 1516px) {
+  .hammer-right {
+    right: 0%;
+  }
+  .hammer-left {
+    left: 0%;
+  }
+  .hammer-left,
+  .hammer-right {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 1188px) {
+  .hammer-left,
+  .hammer-right {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 932px) {
+  .hammer-left,
+  .hammer-right {
+    display: none;
+  }
+}
 @media screen and (max-width: 572px) {
   .box {
     width: 400px;
@@ -379,6 +416,7 @@
     padding: 10px;
   }
   .siege p {
+    margin-top: 30%;
     font-size: 1rem;
   }
 }
@@ -835,7 +873,7 @@
 /* ROADMAP ENDS */
 @media (max-width: 1400px) {
   .roadmap-box-content {
-    width: 500px;
+    width: 345px;
   }
   .pink {
     font-size: 2rem;
