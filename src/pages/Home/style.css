@@ -217,7 +217,7 @@
 }
 
 .t_left p {
-  color: #b1bbd4;
+  color: #fff;
   font-size: 1rem;
   margin-bottom: 20px;
   z-index: 9;
@@ -368,7 +368,7 @@
 }
 
 .siege p {
-  color: #b1bbd4;
+  color: #fff;
   font-size: 1.6rem;
   text-align: center;
   line-height: 1.7;
