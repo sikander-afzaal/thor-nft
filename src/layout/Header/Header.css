@@ -40,6 +40,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-family: "Vidaloka", serif !important;
   font-weight: 400;

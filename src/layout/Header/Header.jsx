@@ -4,6 +4,7 @@ import "./Header.css";
 import logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link as ScrollLink } from "react-scroll";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navbar, setNavbar] = useState(false);
@@ -17,9 +18,6 @@ const Header = () => {
         header.classList.remove("overflow");
       }, 300);
     }
-    const active = document.querySelector(".active-nav");
-    active.classList.remove("active-nav");
-    e.target.classList.add("active-nav");
   };
   const changeBackground = () => {
     if (window.scrollY >= 66) {
@@ -36,26 +34,61 @@ const Header = () => {
     <>
       <header className={`header ${navbar ? "black-nav" : ""}`}>
         <div className="h_container">
-          {/* <img src={logo} alt="" className="logo-mobile" /> */}
           <div className={`nav_ul ${open ? "open-nav" : ""}`}>
-            <a className="active-nav" onClick={openFunc} href="#home">
+            <ScrollLink
+              spy={true}
+              activeClass="active-nav"
+              onClick={openFunc}
+              to="home"
+              offset={-150}
+            >
               Home
-            </a>
-            <a onClick={openFunc} href="#about">
+            </ScrollLink>
+            <ScrollLink
+              spy={true}
+              activeClass="active-nav"
+              onClick={openFunc}
+              to="about"
+              offset={-150}
+            >
               About
-            </a>
-            <a onClick={openFunc} href="#collection">
+            </ScrollLink>
+            <ScrollLink
+              spy={true}
+              activeClass="active-nav"
+              onClick={openFunc}
+              to="collection"
+              offset={-250}
+            >
               Collection
-            </a>
-            <a onClick={openFunc} href="#road">
+            </ScrollLink>
+            <ScrollLink
+              spy={true}
+              activeClass="active-nav"
+              onClick={openFunc}
+              to="road"
+              offset={-250}
+            >
               Roadmap
-            </a>
-            <a onClick={openFunc} href="#team">
+            </ScrollLink>
+            <ScrollLink
+              spy={true}
+              activeClass="active-nav"
+              onClick={openFunc}
+              to="team"
+              offset={-250}
+            >
               Team
-            </a>
-            <a onClick={openFunc} href="#faq">
+            </ScrollLink>
+            <ScrollLink
+              spy={true}
+              activeClass="active-nav"
+              onClick={openFunc}
+              to="faq"
+              offset={-150}
+            >
               Faq
-            </a>
+            </ScrollLink>
           </div>
           <FontAwesomeIcon
             onClick={openFunc}
