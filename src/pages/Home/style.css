@@ -285,7 +285,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 7rem 0rem;
+  margin: 7rem auto;
+  max-width: 1700px;
 }
 .box {
   position: relative;
@@ -486,9 +487,11 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  max-width: 1700px;
   margin-top: 8rem;
   padding-bottom: 4rem;
   flex-direction: column;
+  margin-inline: auto;
 }
 .character h1 {
   font-size: 3rem;
@@ -1144,12 +1147,13 @@
 .faq {
   display: flex;
   align-items: center;
-
+  max-width: 1700px;
   justify-content: center;
   height: auto;
   text-align: center;
   padding: 3rem 0rem;
   gap: 2rem;
+  margin-inline: auto;
   margin-top: 5rem;
 }
 
