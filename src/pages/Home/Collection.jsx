@@ -5,10 +5,10 @@ import art1 from "../../assets/images/art1.png";
 import art2 from "../../assets/images/art2.png";
 import art3 from "../../assets/images/art3.png";
 import art4 from "../../assets/images/art4.png";
-
+import Fade from "react-reveal/Fade";
 const Collection = () => {
   return (
-    <>
+    <Fade top>
       <div className="collection_wrap">
         <h1>Gameplay</h1>
         <div className="collection">
@@ -126,7 +126,7 @@ const Collection = () => {
           </Splide>
         </div>
       </div>
-    </>
+    </Fade>
   );
 };
 

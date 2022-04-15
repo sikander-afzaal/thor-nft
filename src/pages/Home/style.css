@@ -34,6 +34,10 @@
   font-family: "Vidaloka", serif !important;
   font-weight: bold;
 }
+.mint:hover {
+  background-color: #06fff0;
+  color: white;
+}
 .social-div-hero {
   display: flex;
   justify-content: center;
@@ -91,6 +95,7 @@
 .about {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   padding: 2rem 0;
   position: relative;
 }
@@ -287,6 +292,7 @@
   justify-content: center;
   align-items: center;
   margin: 7rem auto;
+  overflow-x: hidden;
   max-width: 1700px;
 }
 .box {
@@ -303,7 +309,6 @@
   max-width: 400px;
   object-fit: contain;
   position: absolute;
-  top: 50%;
   transform: translateY(-50%);
 }
 .hammer-left {
@@ -487,6 +492,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
   gap: 1rem;
   max-width: 1700px;
   margin-top: 8rem;
@@ -558,6 +564,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   gap: 1rem;
   margin-top: 8rem;
   padding-bottom: 4rem;
@@ -727,14 +734,13 @@
   transform: translateX(-50%);
   width: 0;
   height: 100%;
-  border: 3px dashed rgba(255, 255, 255, 0.7);
+  border: 3px dashed #1b447e;
   z-index: -1;
 }
 .roadmap-box {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  /* background-color: red; */
   position: relative;
 }
 .right-box {
@@ -833,9 +839,7 @@
   opacity: 1;
   position: relative;
 }
-.pink {
-  font-size: 2.5rem;
-}
+
 .dark-blue {
   color: black;
 }
@@ -844,17 +848,12 @@
   .roadmap-box-content {
     width: 345px;
   }
-  .pink {
-    font-size: 2rem;
-  }
 }
 @media (max-width: 1116px) {
   .margin-bot {
     margin-bottom: 0rem;
   }
-  .pink {
-    font-size: 2.5rem;
-  }
+
   .desc-roadmap {
     width: 95%;
   }
@@ -957,12 +956,6 @@
     border-radius: 0px;
   }
 
-  .pink {
-    font-size: 1.8rem;
-  }
-  .dark-blue {
-    font-size: 1rem;
-  }
   .roadmap-box:not(:first-child) {
     padding-left: 3rem;
   }
@@ -1009,7 +1002,7 @@
   flex-direction: column;
   width: 100%;
   gap: 4rem;
-  margin: 3rem auto;
+  margin: 4rem auto;
   overflow-x: hidden;
   max-width: 1500px;
   height: 100%;
@@ -1027,11 +1020,16 @@
 }
 
 .splide__arrow {
-  background: white !important;
+  background: #0a1f3a78 !important;
   height: 2em !important;
   opacity: 1 !important;
   font-size: 1.4rem !important;
   width: 2em !important;
+  border: 1px solid #06fff0 !important;
+  color: #06fff0 !important;
+}
+.splide__arrow svg {
+  fill: #06fff0 !important;
 }
 .splide__arrow--prev {
   left: 0rem !important;
@@ -1124,10 +1122,10 @@
   align-items: center;
   width: 100%;
   padding: 2rem 2rem;
-  background-color: white;
+  background: #0a1f3a78;
   border-top: 15px;
   cursor: pointer;
-  color: black;
+  color: white;
   border-radius: 7px;
   transition: all 0.3s ease-in-out;
 }
@@ -1140,14 +1138,15 @@
 .faq-btn svg {
   font-size: 1.5rem;
   pointer-events: none;
+  color: #06fff0;
 }
 .faq-answer {
   transition: all 0.3s ease-in-out;
   padding-inline: 2rem;
   max-height: 0px;
   overflow-y: hidden;
-  color: black;
-  background-color: white;
+  color: white;
+  background: #0a1f3a78;
   border-radius: 7px;
   width: 100%;
 }
@@ -1165,7 +1164,7 @@
   border-top-right-radius: 0px;
 }
 .active-btn {
-  color: black;
+  color: white;
 }
 .border-radius {
   border-top-left-radius: 7px;
