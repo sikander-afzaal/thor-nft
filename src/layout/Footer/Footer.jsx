@@ -17,19 +17,19 @@ function Footer() {
         <h1>Join The Community</h1>
 
         <div className="foot-nav">
-          <a href="#" className="foot-links">
+          <a href="#home" className="foot-links">
             Home
           </a>
-          <a href="#" className="foot-links">
+          <a href="#about" className="foot-links">
             About
           </a>
-          <a href="#" className="foot-links">
+          <a href="#road" className="foot-links">
             Roadmap
           </a>
-          <a href="#" className="foot-links">
+          <a href="#team" className="foot-links">
             Team
           </a>
-          <a href="#" className="foot-links">
+          <a href="#faq" className="foot-links">
             Faq
           </a>
         </div>
@@ -39,9 +39,15 @@ function Footer() {
           <p>verified on etherscan</p>
         </div>
         <div className="social-div">
-          <img src={discord} alt="" />
-          <img src={twitter} alt="" />
-          <img src={circles} alt="" />
+          <a target={"blank"} href="https://discord.gg/thornodes">
+            <img src={discord} alt="..." />
+          </a>
+          <a target={"blank"} href="https://twitter.com/_ThorFinancial">
+            <img src={twitter} alt="..." />
+          </a>
+          <a target={"blank"} href="https://thornodes.medium.com/">
+            <img src={circles} alt="..." />
+          </a>
         </div>
       </div>
     </Fade>

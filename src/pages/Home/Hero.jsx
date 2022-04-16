@@ -22,13 +22,13 @@ const Hero = () => {
             </button>
 
             <div className="social-div-hero">
-              <a href="#">
+              <a target={"blank"} href="https://discord.gg/thornodes">
                 <img src={discord} alt="..." />
               </a>
-              <a href="#">
+              <a target={"blank"} href="https://twitter.com/_ThorFinancial">
                 <img src={twitter} alt="..." />
               </a>
-              <a href="#">
+              <a target={"blank"} href="https://thornodes.medium.com/">
                 <img src={circles} alt="..." />
               </a>
             </div>

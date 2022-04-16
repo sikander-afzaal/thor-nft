@@ -3,7 +3,7 @@
   width: 300px;
   height: auto;
   position: relative;
-  border: 4px solid;
+  border: 1px solid;
   border-image: linear-gradient(to right, #06fff0, #ac7bff);
   border-image-slice: 1;
 }
