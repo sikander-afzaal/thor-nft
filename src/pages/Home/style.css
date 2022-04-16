@@ -24,21 +24,22 @@
   cursor: pointer;
   font-size: 1.3rem;
   /* border: 1.5px solid #ac7bff; */
-  border: none;
-  background-color: transparent;
+  border: 2px solid;
   color: white;
   font-weight: bold;
   letter-spacing: 3px;
-  border-radius: 15px;
   transition: all 0.4s ease-in-out;
-  /* background-color: #1d2331; */
-  background-image: linear-gradient(to left, #ac7bff, #ac7bff);
+  background-color: #1d2331;
+  border-image: linear-gradient(to right, #06fff0, #ac7bff);
   font-family: "Vidaloka", serif !important;
+  border-image-slice: 1;
   font-weight: bold;
 }
 .mint:hover {
   background-color: #ac7bff;
   color: white;
+  border-image: none;
+  border-color: white;
 }
 .social-div-hero {
   display: flex;
