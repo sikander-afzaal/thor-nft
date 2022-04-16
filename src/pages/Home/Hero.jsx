@@ -4,7 +4,7 @@ import CountDown from "../../components/CountDown/CountDown";
 import discord from "../../assets/icons/discord.svg";
 import twitter from "../../assets/icons/twitter.svg";
 import circles from "../../assets/icons/circles.svg";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.svg";
 import Fade from "react-reveal/Fade";
 const Hero = () => {
   return (

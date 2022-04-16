@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 // assets
-import logo from "../../assets/images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
