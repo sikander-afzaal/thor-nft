@@ -38,6 +38,7 @@ const About = () => {
                 controls={false}
                 autoPlay
                 loop
+                muted
                 playsInline
               >
                 <source src={vid} type="video/mp4" />
