@@ -23,26 +23,30 @@ function Built() {
       <div className="built-box-div">
         <Fade left>
           <div className="built-box">
-            <h2>Defi</h2>
-            <p>
-              With Decentralized Finance, we can leverage blockchain ran economy
-              models. This creates community ran economies where players can
-              earn tokens while they play. The community also holds power with
-              Gods of Asgard, with the ability to vote on future updates and
-              improvements.
-            </p>
+            <div>
+              <h2>Defi</h2>
+              <p>
+                With Decentralized Finance, we can leverage blockchain ran
+                economy models. This creates community ran economies where
+                players can earn tokens while they play. The community also
+                holds power with Gods of Asgard, with the ability to vote on
+                future updates and improvements.
+              </p>
+            </div>
           </div>
         </Fade>
         <Fade right>
           <div className="built-box">
-            <h2>Ownership</h2>
-            <p>
-              Using Blockchain technology, players can own their characters and
-              other in-game assets. In traditional gaming, developers of the
-              game own and control all assets. Players are free to sell,
-              purchase, and trade the blockchain assets including character NFTs
-              and tokens earned.
-            </p>
+            <div>
+              <h2>Ownership</h2>
+              <p>
+                Using Blockchain technology, players can own their characters
+                and other in-game assets. In traditional gaming, developers of
+                the game own and control all assets. Players are free to sell,
+                purchase, and trade the blockchain assets including character
+                NFTs and tokens earned.
+              </p>
+            </div>
           </div>
         </Fade>
       </div>

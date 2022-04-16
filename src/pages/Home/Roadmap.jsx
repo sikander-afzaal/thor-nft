@@ -35,17 +35,19 @@ function Roadmap() {
               <Fade>
                 <div className="roadmap-box" ref={box}>
                   <div className="roadmap-box-content left">
-                    <h1 className="margin-bot">Phase 1</h1>
+                    <div className="inner-road">
+                      <h1 className="margin-bot">Phase 1</h1>
 
-                    <div className="right-box">
-                      <p>Development and Launch</p>
-                      <p>Full model upgrades</p>
-                      <p>NFT Mint</p>
-                      <p>Playable Demo</p>
-                      <p>Whitepaper</p>
-                      <p>Native Token Launch</p>
-                      <p>Renting Marketplace</p>
-                      <p>Game Launch</p>
+                      <div className="right-box">
+                        <p>Development and Launch</p>
+                        <p>Full model upgrades</p>
+                        <p>NFT Mint</p>
+                        <p>Playable Demo</p>
+                        <p>Whitepaper</p>
+                        <p>Native Token Launch</p>
+                        <p>Renting Marketplace</p>
+                        <p>Game Launch</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -53,12 +55,14 @@ function Roadmap() {
               <Fade delay={200}>
                 <div className="roadmap-box" ref={box2}>
                   <div className="roadmap-box-content right">
-                    <h1>Phase 2</h1>
+                    <div className="inner-road">
+                      <h1>Phase 2</h1>
 
-                    <div className="right-box">
-                      <p>PvP Update</p>
-                      <p>Balance changes</p>
-                      <p>Further game improvements</p>
+                      <div className="right-box">
+                        <p>PvP Update</p>
+                        <p>Balance changes</p>
+                        <p>Further game improvements</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -66,12 +70,14 @@ function Roadmap() {
               <Fade delay={400}>
                 <div className="roadmap-box" ref={box3}>
                   <div className="roadmap-box-content left">
-                    <h1>Phase 3</h1>
+                    <div className="inner-road">
+                      <h1>Phase 3</h1>
 
-                    <div className="right-box">
-                      <p>Future</p>
-                      <p>VR update</p>
-                      <p>and more...</p>
+                      <div className="right-box">
+                        <p>Future</p>
+                        <p>VR update</p>
+                        <p>and more...</p>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -8,6 +8,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import TeamCard from "../../components/TeamCard/TeamCard";
 import Fade from "react-reveal/Fade";
+
 function Team() {
   return (
     <Fade duration={1500}>

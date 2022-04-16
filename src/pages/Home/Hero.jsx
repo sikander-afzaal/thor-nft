@@ -17,7 +17,9 @@ const Hero = () => {
           <div className="hero_container">
             <CountDown />
 
-            <button className="mint">MINT</button>
+            <button className="mint">
+              <p>MINT</p>
+            </button>
 
             <div className="social-div-hero">
               <a href="#">
