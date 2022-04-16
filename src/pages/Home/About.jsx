@@ -5,9 +5,6 @@ const About = () => {
   return (
     <>
       <div className="about" id="about">
-        <div className="shadow_div"></div>
-        <div className="shadow_div sh_div2"></div>
-
         <div className="t_container">
           <Fade cascade bottom>
             <div className="t_left">

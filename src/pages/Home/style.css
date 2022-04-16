@@ -601,17 +601,16 @@
   grid-template-rows: 0.5fr 1fr;
   text-align: center;
   background-color: #1d2331;
-
-  border-radius: 50em;
-  border: 4px solid transparent;
-  border-radius: 10px;
+  border: 4px solid;
+  border-image: linear-gradient(to right, #06fff0, #ac7bff);
+  border-image-slice: 1;
   padding: 20px 0px;
   width: 500px;
   height: 400px;
 }
 .built-box h2 {
   font-size: 2.3rem;
-  color: #ac7bff;
+  color: #06fff0;
   grid-column: 1/2;
   grid-row: 1/2;
   justify-self: center;
@@ -767,7 +766,9 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  border: 2px solid #ac7bff;
+  border: 4px solid;
+  border-image: linear-gradient(to right, #06fff0, #ac7bff);
+  border-image-slice: 1;
 }
 .bold-underline {
   font-weight: bold;
@@ -786,7 +787,7 @@
   color: white;
 }
 .roadmap-box-content h1 {
-  color: #ac7bff;
+  color: #06fff0;
   font-family: "Montserrat", sans-serif !important;
   font-weight: 700;
 }
@@ -1141,7 +1142,7 @@
 .faq-btn svg {
   font-size: 1.5rem;
   pointer-events: none;
-  color: #ac7bff;
+  color: #06fff0;
 }
 .faq-answer {
   transition: all 0.3s ease-in-out;
